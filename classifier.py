@@ -30,7 +30,7 @@ def app():
         user_input = re.sub(r'[^\w\s]', '', user_input.lower())
         
         # Generate embeddings for input text
-        input_embedding = model.encode(user_input, convert_to_tensor=True).cpu().numpy()
+        input_embedding = model.encode(user_input).numpy()
 
         # Predict sentiment using loaded classifier
         sentiment_prediction = classifier.predict(input_embedding)
