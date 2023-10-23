@@ -33,7 +33,7 @@ def app():
         input_embedding = model.encode(user_input, convert_to_tensor=True).cpu().numpy()
 
         # Predict sentiment using loaded classifier
-        sentiment_prediction = classifier.predict(input_embedding)[0]
+        sentiment_prediction = classifier.predict(input_embedding)
 
         # Map predicted sentiment to label
         sentiment_label = sentiment_labels[sentiment_prediction]
