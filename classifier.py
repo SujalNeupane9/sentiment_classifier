@@ -4,7 +4,7 @@ import pickle
 from sentence_transformers import SentenceTransformer
 
 # Load Sentence Transformer model
-model = SentenceTransformer('paraphrase-distilroberta-base-v1')
+model = SentenceTransformer('thenlper/gte-large') #paraphrase-distilroberta-base-v1')
 
 # Load CatBoostClassifier model
 with open('model/catboost_model.pkl', 'rb') as f:
