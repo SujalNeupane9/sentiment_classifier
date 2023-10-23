@@ -40,3 +40,6 @@ def app():
 
         # Display result to user
         st.write(f'The sentiment of your review is {sentiment_label}.')
+
+if __name__ == "__main__":
+    app()
