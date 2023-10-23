@@ -7,7 +7,7 @@ from sentence_transformers import SentenceTransformer
 model = SentenceTransformer('thenlper/gte-large')
 
 # Load CatBoostClassifier model
-with open('catboost_model.pkl', 'rb') as f:
+with open('model/catboost_model.pkl', 'rb') as f:
     classifier = pickle.load(f)
 
 # Define sentiment labels
